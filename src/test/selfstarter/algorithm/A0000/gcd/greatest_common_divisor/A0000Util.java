@@ -82,7 +82,8 @@ public class A0000Util {
 		}else if(mod == 1){
 		//更相减损数	
 		}else if(mod == 2){
-		//辗转相除	
+		//辗转相除
+		gcdCal_LoopDivisor();
 		}else if(mod == 3){
 		//循环最小数
 		gcdCal_LoopSmaller();
@@ -93,9 +94,24 @@ public class A0000Util {
 	}
 	
 	/*
-	 * 循环较小数求最小公倍数
+	 * 循环较小数求最小公倍数 mod3
 	 */
 	private void gcdCal_LoopSmaller(){ 
+		
+		int j=(int) ((Math.ceil(larger>>1)<smaller)?Math.ceil(larger>>1):smaller);
+		for(int i=1;i<=j;i++){
+			if (smaller%i == 0 && larger%i == 0){
+				gcd = i;
+			}
+			timer();
+		}
+		
+	}
+	
+	/*
+	 * 辗转相除求最小公倍数 mod2
+	 */
+	private void gcdCal_LoopDivisor(){ 
 		
 		int j=(int) ((Math.ceil(larger>>1)<smaller)?Math.ceil(larger>>1):smaller);
 		for(int i=1;i<=j;i++){
