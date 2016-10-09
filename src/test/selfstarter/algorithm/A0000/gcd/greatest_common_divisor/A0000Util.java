@@ -113,6 +113,18 @@ public class A0000Util {
 	 */
 	private void gcdCal_LoopDivisor(){ 
 		
+		gcdCal_LoopDivisor(larger , smaller);
+		
+	}
+	
+	/*
+	 * 辗转相除求最小公倍数 mod2
+	 */
+	private void gcdCal_LoopDivisor(int l , int s){ 
+		
+		int ll;
+		int ss;
+		int mm;
 		int j=(int) ((Math.ceil(larger>>1)<smaller)?Math.ceil(larger>>1):smaller);
 		for(int i=1;i<=j;i++){
 			if (smaller%i == 0 && larger%i == 0){
