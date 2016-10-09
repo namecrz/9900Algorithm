@@ -4,8 +4,8 @@ public class A0000Caller {
 
 	public static void main(String[] args) {
 		
-		int a = 126;
-		int b = 48;
+		int a = 486721268;
+		int b = 481245436;
 		int mod = 3;
 		A0000Util u =new A0000Util(a, b, mod);
 		System.out.println(u.toString());
