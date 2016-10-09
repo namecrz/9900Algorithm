@@ -97,7 +97,7 @@ public class A0000Util {
 	 */
 	private void gcdCal_LoopSmaller(){ 
 		
-		int j=(int) ((Math.ceil(larger/2)>smaller)?Math.ceil(larger/2):smaller);
+		int j=(int) ((Math.ceil(larger>>1)>smaller)?Math.ceil(larger>>1):smaller);
 		for(int i=1;i<=j;i++){
 			if (smaller%i == 0 && larger%i == 0){
 				gcd = i;
@@ -139,6 +139,11 @@ public class A0000Util {
 	 */
 	public int getGcd() {
 		return gcd;
+	}
+	
+	public String toString(){
+		String o = "  a: "+a+"\n"+"  b: "+b+"\n"+"mod: "+mod+"\n"+"gcd: "+gcd;
+		return o;
 	}
 	
 	
