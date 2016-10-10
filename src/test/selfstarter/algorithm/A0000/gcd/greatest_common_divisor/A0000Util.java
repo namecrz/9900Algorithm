@@ -95,6 +95,8 @@ public class A0000Util {
 	
 	/*
 	 * 循环较小数求最小公倍数 mod3
+	 * 原理：从小到大便利每一种可能
+	 * Loop: i>min(ceil(larger)/2,smaller)
 	 */
 	private void gcdCal_LoopSmaller(){ 
 		
@@ -110,6 +112,8 @@ public class A0000Util {
 	
 	/*
 	 * 辗转相除求最小公倍数 mod2
+	 * 原理：y%x=k...b; y=kx+b; gcd(y,x)=gcd(x,b)
+	 * Loop:Recursion x%b==0  
 	 */
 	private void gcdCal_LoopDivisor(){ 
 		
@@ -122,17 +126,20 @@ public class A0000Util {
 	 */
 	private void gcdCal_LoopDivisor(int l , int s){ 
 		
-		int ll;
-		int ss;
-		int mm;
-		int j=(int) ((Math.ceil(larger>>1)<smaller)?Math.ceil(larger>>1):smaller);
-		for(int i=1;i<=j;i++){
-			if (smaller%i == 0 && larger%i == 0){
-				gcd = i;
-			}
-			timer();
-		}
+		int m;
 		
+		timer();
+		if (l%s==0){
+			gcd = s ;
+			
+		}else{
+
+			m=l%s;
+			
+			//因为余数<除数
+			gcdCal_LoopDivisor(s,m);
+			
+		}
 	}
 	
 	/**
