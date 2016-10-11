@@ -126,20 +126,39 @@ public class A0000Util {
 	 */
 	private void gcdCal_LoopDivisor(int l , int s){ 
 		
-		int m;
-		
 		timer();
+		
+		int m;
+		int a;
+		int b;
+		
 		if (l%s==0){
+			
 			gcd = s ;
 			
 		}else{
-
-			m=l%s;
 			
-			//因为余数<除数
-			gcdCal_LoopDivisor(s,m);
-			
+			if (l%2 == 0 && s%2 == 0 ){
+				
+			}else if(l%2 == 0 && s%2 != 0 ){
+				
+			}else if(l%2 != 0 && s%2 == 0 ){
+				
+			}else if(l%2 != 0 && s%2 != 0 ){
+				if (l%s==0){
+					gcd = s ;
+					
+				}else{
+	
+					m=l%s;
+					
+					//因为余数<除数
+					gcdCal_LoopDivisor(s,m);
+					
+				}
+			}
 		}
+
 	}
 	
 	/**
