@@ -11,7 +11,6 @@ public class A0000Caller {
 		A0000Util u =new A0000Util(a, b,mod);
 
 		System.out.println("Gcd: "+u.getGcd());
-
 			
 	}
 	
