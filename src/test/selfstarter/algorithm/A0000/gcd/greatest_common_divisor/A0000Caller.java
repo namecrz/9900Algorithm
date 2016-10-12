@@ -10,7 +10,7 @@ public class A0000Caller {
 		
 		A0000Util u =new A0000Util(a, b,mod);
 
-//		System.out.println(u.toString());
+		System.out.println(u.getGcd());
 
 			
 	}
