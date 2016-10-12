@@ -4,13 +4,13 @@ public class A0000Caller {
 
 	public static void main(String[] args) {
 		
-		int a = 953245243;
-		int b = 312431246;
-		int mod = 0;
+		int a = 953245256;
+		int b = 612416;
+		int mod = 1;
 		
 		A0000Util u =new A0000Util(a, b,mod);
 
-		System.out.println(u.getGcd());
+		System.out.println("Gcd: "+u.getGcd());
 
 			
 	}
