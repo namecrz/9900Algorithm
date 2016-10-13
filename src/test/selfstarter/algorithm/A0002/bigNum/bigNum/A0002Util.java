@@ -81,11 +81,19 @@ public class A0002Util {
 			
 		}else if (mod == 1){
 			
+			calSum();
+			
 		}else if (mod == 2){
+			
+			calDiff();
 			
 		}else if (mod == 3){
 			
+			calPro();
+			
 		}else if (mod == 4){
+			
+			calQuot();
 			
 		}
 		
@@ -110,6 +118,14 @@ public class A0002Util {
 	private int[] reverse(int[] t){
 		
 		return t;
+		
+	}
+	
+	private byte[] toBinary(int[] t){
+		
+		byte[] bt ={0};
+		
+		return bt;
 		
 	}
 	
