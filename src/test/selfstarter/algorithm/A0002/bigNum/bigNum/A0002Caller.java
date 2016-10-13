@@ -1,4 +1,4 @@
-package test.selfstarter.algorithm.A0002.root.root;
+package test.selfstarter.algorithm.A0002.bigNum.bigNum;
 
 public class A0002Caller {
 
