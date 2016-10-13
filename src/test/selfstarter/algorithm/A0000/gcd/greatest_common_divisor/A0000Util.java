@@ -1,13 +1,9 @@
 package test.selfstarter.algorithm.A0000.gcd.greatest_common_divisor;
 
-/*
+/**
  * greatest_common_divisor:
  * @parameter mod:算法模式
  * 
- */
-
-
-/*
  * @author 作者名
  * @date 日期
  * @version 版本标识
@@ -15,11 +11,12 @@ package test.selfstarter.algorithm.A0000.gcd.greatest_common_divisor;
  * @since 最早使用该方法/类/接口的JDK版本
  * @return 返回值
  * @throws 异常类及抛出条件
- * @deprecated 引起不推荐使用的警告
+ * --@deprecated 引起不推荐使用的警告
  * @see reference 查看引用
  * @override 重写
  * 
  */
+
 public class A0000Util {
 	
 	private String desc;
