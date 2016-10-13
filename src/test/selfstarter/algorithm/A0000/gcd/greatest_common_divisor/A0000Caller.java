@@ -6,7 +6,7 @@ public class A0000Caller {
 		
 		int a = 953245256;
 		int b = 612416;
-		int mod = 1;
+		int mod = 0;
 		
 		A0000Util u =new A0000Util(a, b,mod);
 
