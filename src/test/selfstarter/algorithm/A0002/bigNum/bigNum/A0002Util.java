@@ -18,17 +18,100 @@ package test.selfstarter.algorithm.A0002.bigNum.bigNum;
  */
 public class A0002Util { 
 	
-	private int a;
+	private String desc;
 	
-	private int b;
+	private int mod;
+
+	private int[] a;
 	
+	private int[] b;
+
+	private int[] ra;
 	
-	private void init(){
+	private int[] rb;
+
+	private int[] odd;
+	
+	private int[] carry;
+	
+	private int[] rsum;
+	
+	private int[] sum;
+	
+	private int[] diff;//difference 
+	
+	private int[] pro;//product 
+	
+	private int[] quot ;//quotient 
+
+	private int timer = 0;
+	
+	private void init(int[] a, int[] b, int mod){
+		
+		this.a=a;
+		this.b=b;
+		ra=reverse(a);
+		rb=reverse(b);
+		this.mod=mod;
 		
 	}
 	
-	private void order(int x ,int y){
+	public A0002Util(int[] a, int[] b) {
+
+		init(a, b, 0);
+		cal();
+
+	}
+	
+	public A0002Util(int[] a, int[] b, int mod) {
+
+		init(a, b, mod);
+		cal();
+
+	}
+	
+	private void cal(){
+		
+		if (mod == 0){
+			
+			calSum();
+			calDiff();
+			calPro();
+			calQuot();
+			
+		}else if (mod == 1){
+			
+		}else if (mod == 2){
+			
+		}else if (mod == 3){
+			
+		}else if (mod == 4){
+			
+		}
 		
 	}
+
+	private void calSum(){
+		
+	}
+	
+	private void calDiff(){
+			
+	}
+	
+	private void calPro(){
+		
+	}
+	
+	private void calQuot(){
+		
+	}
+	
+	private int[] reverse(int[] t){
+		
+		return t;
+		
+	}
+	
 	
 }
